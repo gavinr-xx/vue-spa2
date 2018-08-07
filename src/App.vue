@@ -1,13 +1,19 @@
 <template>
   <div id="app">
+    <CAR></CAR>
   </div>
 </template>
 
 <script>
 
+import CAR from './components/CAR.vue'
 
 export default {
-  name: 'app'
+  name: 'app',
+  components: {
+    CAR
+  }
+
 }
 </script>
 
