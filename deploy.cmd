@@ -1,14 +1,16 @@
 call npm install
 call npm run build
 
-call cd %DEPLOYMENT_TARGET%
-for /F "delims=" %%i in ('dir /b') do (rmdir "%%i" /s/q || del "%%i" /s/q)
+ECHO %DEPLOYMENT_TARGET%
 
-xcopy /d %DEPLOYMENT_SOURCE%\dist\* %DEPLOYMENT_TARGET%\dist /s /i
-xcopy /d %DEPLOYMENT_SOURCE%\public\index.html %DEPLOYMENT_TARGET%\index.html*
-REM xcopy /d %DEPLOYMENT_SOURCE%\server.js %DEPLOYMENT_TARGET%\server.js*
-xcopy /d %DEPLOYMENT_SOURCE%\package.json %DEPLOYMENT_TARGET%\package.json*
-REM xcopy /d %DEPLOYMENT_SOURCE%\build\web.config %DEPLOYMENT_TARGET%\web.config*
+REM call cd %DEPLOYMENT_TARGET%
+REM for /F "delims=" %%i in ('dir /b') do (rmdir "%%i" /s/q || del "%%i" /s/q)
 
-call npm install --only=production
-echo Deployed.
+REM xcopy /d %DEPLOYMENT_SOURCE%\dist\* %DEPLOYMENT_TARGET%\dist /s /i
+REM xcopy /d %DEPLOYMENT_SOURCE%\public\index.html %DEPLOYMENT_TARGET%\index.html*
+REM REM xcopy /d %DEPLOYMENT_SOURCE%\server.js %DEPLOYMENT_TARGET%\server.js*
+REM REM xcopy /d %DEPLOYMENT_SOURCE%\package.json %DEPLOYMENT_TARGET%\package.json*
+REM REM xcopy /d %DEPLOYMENT_SOURCE%\build\web.config %DEPLOYMENT_TARGET%\web.config*
+
+REM REM call npm install --only=production
+REM echo Deployed.
