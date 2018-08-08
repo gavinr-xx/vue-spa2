@@ -13,4 +13,4 @@ REM REM xcopy /d %DEPLOYMENT_SOURCE%\package.json %DEPLOYMENT_TARGET%\package.js
 REM REM xcopy /d %DEPLOYMENT_SOURCE%\build\web.config %DEPLOYMENT_TARGET%\web.config*
 
 REM REM call npm install --only=production
-REM echo Deployed.
+echo Deployed.
