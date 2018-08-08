@@ -48,7 +48,7 @@ export default {
       title: "We need to fix something",
       discoveryDate: "2018-01-01",
       problem: "Something is broken",
-      solution: "We need tighten that",
+      solution: "We need tighten that please",
       dueDate: "2018-10-23",
       status: "Outstanding"
     };
