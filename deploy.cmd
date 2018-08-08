@@ -1,5 +1,5 @@
-call npm install
-call npm run build
+REM call npm install
+REM call npm run build
 
 ECHO %DEPLOYMENT_TARGET%
 

@@ -3,7 +3,7 @@ node_js:
   - "8.2"
 deploy:
   provider: azure_web_apps
-  verbose: false
+  verbose: true
   skip_cleanup: true
   # username: azure_deployment_user       # If AZURE_WA_USERNAME isn't set
   # password: azure_deployment_password   # If AZURE_WA_PASSWORD isn't set
